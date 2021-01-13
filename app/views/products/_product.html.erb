@@ -1,8 +1,12 @@
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"><%= product.title %></h5>
-    <p class="card-text"><%= product.description %></p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="col-4">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= product.title %></h5>
+      <p class="card-text text-truncate"><%= product.description %></p>
+      <p class="badge bg-light text-dark"><%= number_to_currency(product.price, unit: "UAH", separator: ",", delimiter: " ", format: "%n %u")%></p>
+      <hr>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
   </div>
 </div>
