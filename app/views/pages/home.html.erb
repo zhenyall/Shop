@@ -1,3 +1,11 @@
+<% if current_user %>
+  <%= link_to 'Sing out', destroy_user_session_path, method: :get, class: 'btn btn-primary' %>
+<% end %>
+
+<div class="mt-4">
+  <%= link_to 'Add to cart', product_order_items_path(@products), method: :post, class: 'btn btn-success' %>
+</div>
+
 <div class="row">
   <%= render @products %>
 </div>

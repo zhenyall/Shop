@@ -1,0 +1,7 @@
+<% @items.each do |item| %>
+  <p>Title: <%= item.product.title %></p>
+  <p>Description: <%= item.product.description %></p>
+  <p>Price: <%= item.product.price %></p>
+  <p>Quantity: <%= item.quantity %></p>
+  <%= link_to 'Add one', product_order_item_path(item.product, item), method: :patch, class: 'btn btn-info' %>
+<% end %>
