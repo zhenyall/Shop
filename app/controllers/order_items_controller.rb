@@ -11,6 +11,8 @@ class OrderItemsController < ApplicationController
   end
 
   def destroy
-
+    order_item = OrderItem.find(params[:id])
+    order_item.update(quantity: order_item.quantity - 1)
+    redirect_to order_path(current_order)
   end
 end
