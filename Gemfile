@@ -62,3 +62,7 @@ gem 'activeadmin'
 
 # Plus integrations with:
 gem 'devise'
+
+gem 'aws-sdk-s3'
+
+gem 'dotenv-rails'
