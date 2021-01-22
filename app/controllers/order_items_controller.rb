@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class OrderItemsController < ApplicationController
   def create
     order_item = current_order.order_items.create(product_id: params[:product_id], user: current_user)

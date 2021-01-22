@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'orders/show'
   devise_for :users
   ActiveAdmin.routes(self)
   resources :categories, only: :show do
-    resources :products, only: [:index, :show]
+    resources :products, only: %i[index show]
   end
   resources :products do
     resources :order_items, only: %i[create update destroy]
