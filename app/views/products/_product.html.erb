@@ -1,20 +1,19 @@
 <div class="col-4">
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+<!--    <img src="..." class="card-img-top" alt="...">-->
     <div class="card-body">
       <h5 class="card-title"><%= product.title %></h5>
       <p class="card-text text-truncate"><%= product.description %></p>
       <p class="badge bg-light text-dark"><%= number_to_currency(product.price, unit: "UAH", separator: ",", delimiter: " ", format: "%n %u")%></p>
-      <hr>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
 
-    <div class="mt-4">
-      <%= link_to 'Add to cart', product_order_items_path(product), method: :post, class: 'btn btn-success' %>
-    </div>
 
-    <div class="mt-4">
-      <%= link_to 'Add comment', new_comment_path(user: current_user, product: @product), method: :get, class: 'btn btn-primary' %>
+      <div class="mt-4">
+        <%= link_to 'Add comment', new_comment_path(user_id: current_user, product_id: product), method: :get, class: 'btn btn-primary' %>
+      </div>
+
+      <div class="mt-4">
+        <%= link_to 'Add to cart', product_order_items_path(product), method: :post, class: 'btn btn-success' %>
+      </div>
     </div>
 
   </div>

@@ -7,6 +7,8 @@ class Product < ApplicationRecord
   has_many :comments
 
   def rating
-    comments.sum(&:rating) / comments.count
+    return 0 if comments.empty?
+
+    comments.sum(&:rating).to_f / comments.count || 0
   end
 end

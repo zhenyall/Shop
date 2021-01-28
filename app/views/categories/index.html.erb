@@ -1,0 +1,5 @@
+<% @categories.each do |category| %>
+  <p>Title: <%= category.title %></p>
+  <p>Order: <%= category.order %></p>
+  <%= link_to 'Add one', category_path(category), class: 'btn btn-info' %>
+<% end %>

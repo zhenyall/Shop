@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-
   def new
     @comment = Comment.new(user_id: params[:user_id], product_id: params[:product_id])
   end
@@ -15,8 +14,12 @@ class CommentsController < ApplicationController
     end
   end
 
-  def edit; end
-  def update; end
+  def update;
+    @products = Product.find(params[:product_id])
+    @comment = @products.comments.find(params[:id])
+    @comment.update
+    redirect_to product_path(@products)
+  end
 
   private
 
