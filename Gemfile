@@ -70,3 +70,6 @@ gem 'aws-sdk-s3'
 gem 'dotenv-rails'
 
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+
+gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
+
