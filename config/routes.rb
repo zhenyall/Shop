@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   get 'orders/show'
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'callbacks' }
   ActiveAdmin.routes(self)
   resources :categories, only: :show do
     resources :products, only: %i[index show]
