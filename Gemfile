@@ -64,7 +64,6 @@ gem 'activeadmin'
 
 # Plus integrations with:
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
-gem "omniauth-rails_csrf_protection"
 
 gem 'aws-sdk-s3'
 
