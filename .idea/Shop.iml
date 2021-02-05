@@ -309,6 +309,22 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="autoprefixer-rails (vbundled(10.2.4.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/autoprefixer-rails-10.2.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/autoprefixer-rails-10.2.4.0/vendor" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/autoprefixer-rails-10.2.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/autoprefixer-rails-10.2.4.0/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="aws-eventstream (vbundled(1.1.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -455,6 +471,34 @@
         <excluded>
           <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootsnap-1.6.0/exe" />
           <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootsnap-1.6.0/ext" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bootstrap-sass (vbundled(3.4.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/test" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/assets" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/templates" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/test" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/assets" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/templates" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/test" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/assets" />
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/bootstrap-sass-3.4.1/templates" />
         </excluded>
       </library>
     </orderEntry>
@@ -782,6 +826,20 @@
         <JAVADOC />
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/erubi-1.10.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="execjs (vbundled(2.7.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/execjs-2.7.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/cache/ruby/2.7.0/gems/execjs-2.7.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -2417,6 +2475,8 @@
         <option value="application_record" />
         <option value="assets" />
         <option value="benchmark" />
+        <option value="capistrano:nginx:config" />
+        <option value="capistrano:nginx_puma:config" />
         <option value="channel" />
         <option value="controller" />
         <option value="devise" />
@@ -2467,6 +2527,8 @@
         <option value="application_record" />
         <option value="assets" />
         <option value="benchmark" />
+        <option value="capistrano:nginx:config" />
+        <option value="capistrano:nginx_puma:config" />
         <option value="channel" />
         <option value="controller" />
         <option value="devise" />
